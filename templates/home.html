@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" preconnect " href="https://fonts.gstatic.com ">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap " rel="stylesheet ">
+    <link rel="stylesheet" type="text/css" href="\static\css\style1.css">
+    <title>RealEstate Solutions</title>
+</head>
+
+<body>
+    <div class="img"></div>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('analysis') }}">Predictor</a></li>
+        <li><a href="{{ url_for('chatbot') }}">Assistant</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li style="float:right"><a class="active" href="{{ url_for('contact') }}">Contact Us</a></li>
+    </ul>
+    <div class="image"></div>
+    <center>
+        <br></br>
+        <p style = "font-family: 'Ubuntu', sans-serif;font-style:italic;font-size:25px;font-weight:x-large;color: #4CAF50">
+        Property Price Predictor
+        </p>
+        <form method="POST" action="{{url_for( 'predict')}}">
+            <h2>Location</h2>
+            <div>
+                <select class='loc' name='Location1'>
+                {% for location in locations%}
+                    <option value={{location}}>{{location}}</option>
+                {% endfor %}
+                </select>
+            </div>
+            <h2>Area(Square Feets)</h2>
+            <div>
+                <input class="area" type="number" name='Area1' placeholder="Enter Area" value="1000">
+            </div>
+            <h2>Rooms</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name="Rooms1" value="1" />
+                <label for="radio-bhk-1 ">1</label>
+                <input type="radio" id="radio-bhk-2" name="Rooms1" value="2" checked/>
+                <label for="radio-bhk-2 ">2</label>
+                <input type="radio" id="radio-bhk-3" name="Rooms1" value="3" />
+                <label for="radio-bhk-3 ">3</label>
+                <input type="radio" id="radio-bhk-4" name="Rooms1" value="4" />
+                <label for="radio-bhk-4">4</label>
+                <input type="radio" id="radio-bhk-5" name="Rooms1" value="5" />
+                <label for="radio-bhk-5">5</label>
+            </div>
+            <h2>Gymnasium</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='Gymnasium1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='Gymnasium1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>Lift Available</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='LiftAvailable1' value="1" checked/>
+                <label for="radio-bhk-1 ">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='LiftAvailable1' value="0" />
+                <label for="radio-bhk-2 ">No</label>
+            </div>
+            <h2>Car Parking</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='CarParking1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='CarParking1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>24 x 7 Security</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='Security1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='Security1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>Children's Play Area</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='ChildrensPlayArea1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='ChildrensPlayArea1' value="0" />
+                <label for="radio-bhk-2 ">No</label>
+            </div>
+            <h2>Clubhouse</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='Clubhouse1' value="1" checked/>
+                <label for="radio-bhk-1 ">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='Clubhouse1' value="0" />
+                <label for="radio-bhk-2 ">No</label>
+            </div>
+            <h2>Intercom</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='Intercom1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='Intercom1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>Landscape Garden</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='LandscapedGardens1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='LandscapedGardens1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>Indoor Games</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='IndoorGames1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='IndoorGames1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>Gas Connection</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='GasConnection1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='GasConnection1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>JoggingTrack</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='JoggingTrack1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='JoggingTrack1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <h2>SwimmingPool</h2>
+            <div>
+                <input type="radio" id="radio-bhk-1" name='SwimmingPool1' value="1" checked/>
+                <label for="radio-bhk-1">Yes</label>
+                <input type="radio" id="radio-bhk-2" name='SwimmingPool1' value="0" />
+                <label for="radio-bhk-2">No</label>
+            </div>
+            <div>
+                <br>
+                <input class="sub" type="submit" value='predict'>
+                <p>
+                    <h2 class='box'>
+                        {{output}} INR
+                    </h2>
+                </p>
+                </br>
+            </div>
+        </form>
+    </center>
+    <footer>
+        <h2>About us</h2>
+        <div class="content">
+            <p>
+                Our Website aims to provide all the necessary data and assistants for the user so that they can make a perfect choice when buying their future house. The prediction related to property price is made by our prediction model which has accuracy over 92%.Our
+                model is perfect for finding prices of property in Mumbai and Thane district.We also have chatbot for users assistants.
+            </p>
+    </footer>
+</body>
+
+</html>

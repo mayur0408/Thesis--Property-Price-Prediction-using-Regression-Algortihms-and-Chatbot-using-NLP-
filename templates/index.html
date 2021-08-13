@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RealEstate Solutions</title>
+    <link rel="stylesheet" type="text/css" href="\static\css\index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap " rel="stylesheet ">
+</head>
+
+<body>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('analysis') }}">Predictor</a></li>
+        <li><a href="{{ url_for('chatbot') }}">Assistant</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li style="float:right"><a class="active" href="{{ url_for('contact') }}">Contact Us</a></li>
+    </ul>
+    <div class="container">
+        <img src="/static/css/mumbaiwall.jpg" alt="Property" width="1350px" height="555px">
+    </div>
+    <div class="text-block">
+        <p style = "font-family: 'Ubuntu', sans-serif;font-style:italic;font-size:30px;font-weight:bolder;">
+        RealEstate Solutions
+        </p>
+        <p style = "font-family: 'Ubuntu', sans-serif;font-style:italic;font-size:20px;">
+        <br>Your ideal website for getting information about your dream house</br> in Mumbai,Thane and Kalyan localities!
+        </p>
+    </div>
+    <footer>
+        <h2>About us</h2>
+        <div class="content">
+            <p>
+                Our Website aims to provide all the necessary data and assistants for the user so that they can make a perfect choice when buying their future house. The prediction related to property price is made by our prediction model which has accuracy over 92%.Our
+                model is perfect for finding prices of property in Mumbai and Thane district.We also have chatbot for users assistants.
+            </p>
+    </footer>
+</body>
+
+</html>

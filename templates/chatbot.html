@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RealEstate Solutions</title>
+<link rel="stylesheet" type="text/css" href="/static/css/chatbotstyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js</a>"></script>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap " rel="stylesheet ">
+</head>
+<body>
+    <div class='image'></div>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('analysis') }}">Predictor</a></li>
+        <li><a href="{{ url_for('chatbot') }}">Assistant</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li style="float:right"><a class="active" href="{{ url_for('contact') }}">Contact Us</a></li>
+    </ul>
+    <center>
+    <p style = "font-family: 'Ubuntu', sans-serif;font-style:italic;color: #4CAF50;font-size:x-large">
+        Smart Assistant !
+    </p>
+    <p style = "font-family: 'Ubuntu', sans-serif;color: rgb(119, 114, 114);">
+        It is an interactive chat bot which has expertise in real estate related queries!However it is also a general purpose chatbot which is well versed with sports,joke,politics etc.
+    </p>
+    </center>
+<div>
+<div id="chatbox">
+<p class="botText"><span>Hi! I'm Convobot.</span></p>
+</div>
+<div id="userInput">
+<input id="textInput" type="text" name="msg" placeholder="Message">
+<input id="buttonInput" type="submit" value="Send">
+</div>
+<script>
+function getBotResponse() {
+var rawText = $("#textInput").val();
+var userHtml = '<p class="userText"><span>' + rawText + '</span></p>';
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+$.get("/get", { msg: rawText }).done(function(data) {
+var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+$("#chatbox").append(botHtml);
+document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+}
+$("#textInput").keypress(function(e) {
+if(e.which == 13) {
+getBotResponse();
+}
+});
+$("#buttonInput").click(function() {
+getBotResponse();
+})
+</script>
+</div>
+<br></br>
+<div>
+    <footer>
+        <h2>About us</h2>
+        <div class="content">
+            <p>
+                Our Website aims to provide all the necessary data and assistants for the user so that they can make a perfect choice when buying their future house. The prediction related to property price is made by our prediction model which has accuracy over 92%.Our
+                model is perfect for finding prices of property in Mumbai and Thane district.We also have chatbot for users assistants.
+            </p>
+    </footer>
+</div>
+</body>
+</html>

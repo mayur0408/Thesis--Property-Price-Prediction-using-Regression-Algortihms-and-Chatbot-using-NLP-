@@ -1,0 +1,110 @@
+li {
+    display: inline;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: rgb(119, 114, 114);
+}
+
+ul {
+    background-color: rgb(119, 114, 114);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li a:hover {
+    background-color: rgb(56, 50, 50);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(29, 27, 27);
+    overflow-x: hidden;
+}
+
+
+/* Container holding the image and the text */
+
+.container {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Bottom right text */
+
+.text-block {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 0.85;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    border: 2px solid black;
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 18px;
+    border-radius: 25px;
+    width: 15%;
+}
+
+button:hover {
+    background-color: rgb(43, 39, 39);
+    color: white;
+}
+
+footer {
+    color: rgb(119, 114, 114);
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    padding: 30px 50px;
+    margin: -9px;
+}
+
+#titleindex {
+    font-family: 'Ubuntu', sans-serif;
+    color: #4CAF50;
+    font-style: italic;
+}
+
+#lineindex {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(119, 114, 114);
+}

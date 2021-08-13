@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap " rel="stylesheet ">
+        <title>Contact Us</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="\static\css\contact.css">
+    </head>
+<body>
+    <div class='image'></div>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('analysis') }}">Predictor</a></li>
+        <li><a href="{{ url_for('chatbot') }}">Assistant</a></li>
+        <li><a href="{{ url_for('about') }}">About Us</a></li>
+        <li style="float:right"><a class="active" href="{{ url_for('contact') }}">Contact Us</a></li>
+    </ul>
+        <center>
+        <br></br>
+            <h1 class="con">Contact Us</h1>
+        <br></br>
+        </center>
+    <div class="container">
+        <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Region</label>
+        <select id="country" name="country">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Thane">Thane</option>
+            <option value="Dombivali">Dombivali</option>
+            <option value="Kalyan">Kalyan</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br></br>
+    <footer>
+        <h2>About us</h2>
+        <div class="content">
+            <p>
+                Our Website aims to provide all the necessary data and assistants for the user so that they can make a perfect choice when buying their future house. The prediction related to property price is made by our prediction model which has accuracy over 92%.Our
+                model is perfect for finding prices of property in Mumbai and Thane district.We also have chatbot for users assistants.
+            </p>
+    </footer>
+</body>
+</html>
