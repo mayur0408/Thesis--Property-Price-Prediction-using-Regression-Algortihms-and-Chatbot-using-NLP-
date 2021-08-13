@@ -1,1 +1,2 @@
 # Thesis : Property Price Prediction using Regression Algortihms and Chatbot using NLP
+The aim here was to implement a dynamic system which predicts prices of property by training on existing data and using regression based machine laerning algorithm! Here we used machine learning model for prediction, flask for communication with front end and model, html and css for front end! We also have a fairly intellgent chatbot which is developed using NLP.
