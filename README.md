@@ -1,7 +1,7 @@
 # Thesis : Property Price Prediction using Regression Algortihms and Chatbot using NLP
 This is final year thesis “Property Price Prediction Using Regression Algorithms, Chatbot using NLP”  which is a free to use dynamic website which helps people find approximate prices of their desired property in Mumbai, Thane and nearby localities based on various features user wants like number of rooms, location, area, car parking availability, lift availability and 12 other features by using regression ML model. Apart from that we also developed a fairly intelligent chat bot which could give response to certain specific commands related to website and also has knowledge about politics, sports, joke, humors and various other field. All this features are provided to user with a minimalist dynamic front end which scales automatically depending on laptop or mobile screen aspect ratio and developed using HTML and CSS. 
 
-We also published a technical reseearch paper on our bachelor's thesis : ijrar.org/download1.php?file=IJRAR1CCP017.pdf , alternatively you can view "". 
+We also published a technical reseearch paper on our bachelor's thesis : #https://www.ijrar.org/viewfull.php?p_id=IJRAR1CCP017 , alternatively you can view "**Final_Published_Paper.pdf**". 
 
 ## Folder/Project structure explanation :
 
@@ -17,7 +17,7 @@ We also published a technical reseearch paper on our bachelor's thesis : ijrar.o
 ## For running the Flask app :
 
 1. Clone repository to your local directory.
-2. Make sure you have python and all the necessary libraries installed on your system.
+2. Make sure you have python and all the necessary libraries installed on your system. All the required libraries are given in "**requirements.txt**" text document. To install these librabires open command propmt in your local directory and type "**pip install -r requirements.txt**". It will take some time as there are penitude of libraries.
 3. Run "**server.py**" file. It will take few moment to run and in the end you will get a URL.
 4. Copy that URL and paste it in your web browser to run the Flask App. 
 
