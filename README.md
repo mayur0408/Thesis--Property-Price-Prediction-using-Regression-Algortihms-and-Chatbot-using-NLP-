@@ -11,37 +11,46 @@ Some visualization to explain our project.
 
 Prices of property depends on the locations where it is located. In the heatmap we have gradient from green to red colour. In the heatmap we have green colour representing affordable houses (Outskirts of Mumbai) and yellow colour represents medium priced houses (Central Mumbai) while red represents extremely high priced houses (South Mumbai/Western Mumbai).
 
+
 ![Loc_vs_price](https://user-images.githubusercontent.com/55938093/129438635-19a9a174-2aad-4ea0-85f5-1a758796cb8b.png)
 
-Along with location number of rooms also effects the price of houses as shown in scatterplot given above! 
+Along with location number of rooms also effects the price of houses as shown in scatterplot given above! Here we have encoded location by their per square foot price and ranking them from lowest to most expensive ranging from 0 to 418 where 418 is most expensive and 0 is least expensive. This technique is called **binning**.
+
 
 ![Feature_importance](https://user-images.githubusercontent.com/55938093/129438676-53e5bef4-40c7-4b19-867f-82360b022d9f.png)
 
 Which are the most important features of houses affecting the price of the houses is given above.
 
+
 ![Performance_evaluation](https://user-images.githubusercontent.com/55938093/129438730-3e79cb1f-0dcf-488f-b730-e33619c90e15.png)
 
 Comparison of various regression based machine learning algorithm's score.
+
 
 ![predvsactual](https://user-images.githubusercontent.com/55938093/129438779-8861b5bc-8235-4705-92ed-33718838be3a.png)
 
 We used Random Forest Regression for prediction and above we have a histogram comparing actual vs predicted value given by the model.
 
+
 ![Homescreen](https://user-images.githubusercontent.com/55938093/129438860-f0eb0e70-854e-4059-98c3-ed9683228de6.png)
 
 Home page of our website.
+
 
 ![Predictpage](https://user-images.githubusercontent.com/55938093/129438872-49f29c17-0edc-4e14-b1ee-d5526c8f3779.png)
 
 Prediction page of our website.
 
+
 ![chatbotpage](https://user-images.githubusercontent.com/55938093/129438886-21cdfd1b-0e7b-4444-b4c1-467cd74ea87e.png)
 
 Chatbot of our website.
 
+
 ![Contactus](https://user-images.githubusercontent.com/55938093/129438895-d5e8e9a7-926c-44b2-9ca9-51902cc82682.png)
 
 Contact Us page for our website.
+
 
 ## Folder/Project structure explanation :
 
