@@ -7,7 +7,7 @@ We also published a technical reseearch paper on our bachelor's thesis : https:/
 
 Some visualization to explain our project.
 
-![Heatmap_satelliteview](https://user-images.githubusercontent.com/55938093/129437982-692ca7cf-7b7c-4452-bd6e-668dae4a3832.png)
+- ![Heatmap_satelliteview](https://user-images.githubusercontent.com/55938093/129437982-692ca7cf-7b7c-4452-bd6e-668dae4a3832.png)
 
 1. Prices of property depends on the locations where it is located. In the heatmap we have gradient from green to red colour. In the heatmap we have green colour representing affordable houses (Outskirts of Mumbai) and yellow colour represents medium priced houses (Central Mumbai) while red represents extremely high priced houses (South Mumbai/Western Mumbai).
 
