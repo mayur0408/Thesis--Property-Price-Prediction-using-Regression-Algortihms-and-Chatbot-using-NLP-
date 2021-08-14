@@ -1,6 +1,8 @@
 # Thesis : Property Price Prediction using Regression Algortihms and Chatbot using NLP
 This is final year thesis “Property Price Prediction Using Regression Algorithms, Chatbot using NLP”  which is a free to use dynamic website which helps people find approximate prices of their desired property in Mumbai, Thane and nearby localities based on various features user wants like number of rooms, location, area, car parking availability, lift availability and 12 other features by using regression ML model. Apart from that we also developed a fairly intelligent chat bot which could give response to certain specific commands related to website and also has knowledge about politics, sports, joke, humors and various other field. All this features are provided to user with a minimalist dynamic front end which scales automatically depending on laptop or mobile screen aspect ratio and developed using HTML and CSS. 
 
+We also published a technical reseearch paper on our bachelor's thesis : ijrar.org/download1.php?file=IJRAR1CCP017.pdf , alternatively you can view "". 
+
 ## Folder/Project structure explanation :
 
 1. For training we used dataset which was uploaded on kaggle : https://www.kaggle.com/sameep98/housing-prices-in-mumbai ,alternatively you can also download "**Dataset1.csv**" file.
@@ -10,3 +12,11 @@ This is final year thesis “Property Price Prediction Using Regression Algorith
 5. The "**static**" folder contains all the CSS codes and images used on the website pages.
 6. The "**data**" folder has training data on which our chatbot is trained.
 7. The "**server.py** and **util.py**" is the python file on which we run our server and data preprocessing is done.
+8. The SQLlite and others folder are created while training machine laerning model for property price prediction,chatbot and while installing python in virtual envieronment. 
+
+## For running the Flask app :
+
+1. Clone repository to your local directory.
+2. Make sure you have python and all the necessary libraries installed on your system.
+3. Run "**server.py**" file. It will take few moment to run and in the end you will get a URL.
+4. Copy that URL and paste it in your web browser to run the Flask App. 
