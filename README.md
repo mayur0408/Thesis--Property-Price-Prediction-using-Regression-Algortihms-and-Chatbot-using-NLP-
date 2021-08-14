@@ -20,3 +20,6 @@ We also published a technical reseearch paper on our bachelor's thesis : ijrar.o
 2. Make sure you have python and all the necessary libraries installed on your system.
 3. Run "**server.py**" file. It will take few moment to run and in the end you will get a URL.
 4. Copy that URL and paste it in your web browser to run the Flask App. 
+
+Hope you find this project useful. If you have any constructive feedback, please send an email to patelmayur0408@gmail.com.
+Thank you!
