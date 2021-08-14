@@ -12,7 +12,7 @@ Some visualization to explain our project.
 Prices of property depends on the locations where it is located. In the heatmap we have gradient from green to red colour. In the heatmap we have green colour representing affordable houses (Outskirts of Mumbai) and yellow colour represents medium priced houses (Central Mumbai) while red represents extremely high priced houses (South Mumbai/Western Mumbai).
 
 
-![Loc_vs_price](https://user-images.githubusercontent.com/55938093/129438635-19a9a174-2aad-4ea0-85f5-1a758796cb8b.png)
+1. ![Loc_vs_price](https://user-images.githubusercontent.com/55938093/129438635-19a9a174-2aad-4ea0-85f5-1a758796cb8b.png)
 
 Along with location number of rooms also effects the price of houses as shown in scatterplot given above! Here we have encoded location by their per square foot price and ranking them from lowest to most expensive ranging from 0 to 418 where 418 is most expensive and 0 is least expensive. This technique is called **binning**.
 
