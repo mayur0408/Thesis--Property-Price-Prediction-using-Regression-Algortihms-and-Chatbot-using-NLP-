@@ -14,6 +14,14 @@ We also published a technical reseearch paper on our bachelor's thesis : https:/
 7. The "**server.py** and **util.py**" is the python file on which we run our server and data preprocessing is done.
 8. The SQLlite and others folder are created while training machine laerning model for property price prediction,chatbot and while installing python in virtual envieronment. 
 
+## Overview
+
+Some visualization to explain our dataset.
+
+![Heatmap_satelliteview](https://user-images.githubusercontent.com/55938093/129437982-692ca7cf-7b7c-4452-bd6e-668dae4a3832.png)
+
+Prices of property depends on the locations. In the heatmap we have green colour representing affordable houses (Outskirts of Mumbai) and yellow colour represents medium priced houses (Central Mumbai) while red represents extremely high priced houses (South Mumbai).
+
 ## For running the Flask app :
 
 1. Clone repository to your local directory.
