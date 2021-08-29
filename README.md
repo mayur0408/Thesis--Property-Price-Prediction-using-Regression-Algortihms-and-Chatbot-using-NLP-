@@ -77,9 +77,9 @@ Some visualization to explain our project.
 ## For running the Flask app :
 
 1. Clone repository to your local directory.
-2. Make sure you have python and all the necessary libraries installed on your system. All the required libraries are given in "**requirements.txt**" text document. To install these librabires open command propmt in your local directory and type "**pip install -r requirements.txt**". It will take some time as there are penitude of libraries.
+2. Make sure you have python and all the necessary libraries installed on your system. All the required libraries are given in "**requirements.txt**" text document. To install these librabires open command prompt in your local directory and type "**pip install -r requirements.txt**". It will take some time as there are penitude of libraries.
 3. Open and run "**server.py**" file. It will take few moment to run and in the end you will get a localhost URL.
 4. Copy that URL and paste it in your web browser to run the Flask App. 
 
-Hope you find this project useful. If you have any constructive feedback, please send an email to patelmayur0408@gmail.com.
+Hope you find this project useful. If you have any feedback, please contact me on the email patelmayur0408@gmail.com.
 Thank you!
