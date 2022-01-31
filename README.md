@@ -63,7 +63,7 @@ Some visualization to explain our project.
 
 
 
-## Folder/Project structure explanation :
+## Folder/Project structure :
 
 1. For training we used dataset which was uploaded on kaggle : https://www.kaggle.com/sameep98/housing-prices-in-mumbai ,alternatively you can also download "**Dataset1.csv**" file.
 2. For prediction of property prices we tried various regression machine learning algorithms like **linear regression, k nearest neighours, decision tree, random forest regression, ada boost and gradiant boosting**. We settled with **random forest regression** at the end for model creation as it gave us the maximum **accuracy of 92% (R2 Score)**. All the steps involved in model creation like **exploratory data analysis(EDA), data transformation(log transformation), data visualization** and **model traning** is done in "**propertypriceprediction5.ipynb**" jupyter notebook. Alternatively you can direclty download the ready model file named "**Final_model.pickle**".
@@ -77,7 +77,7 @@ Some visualization to explain our project.
 ## For running the Flask app :
 
 1. Clone repository to your local directory.
-2. Make sure you have python and all the necessary libraries installed on your system. All the required libraries are given in "**requirements.txt**" text document. To install these librabires open command prompt in your local directory and type "**pip install -r requirements.txt**". It will take some time as there are penitude of libraries.
+2. Make sure you have python and all the necessary libraries installed on your system. All the required libraries are given in "**requirements.txt**" text document. To install these librabires open command prompt in your local directory and type "**pip install -r requirements.txt**". It will take some time as there are large number of libraries.
 3. Open and run "**server.py**" file. It will take few moment to run and in the end you will get a localhost URL.
 4. Copy that URL and paste it in your web browser to run the Flask App. 
 
